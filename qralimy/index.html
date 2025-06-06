@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>QRAlimy</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+  <link rel="stylesheet" href="./css/style.css" />
+</head>
+<body>
+  <header>
+    <h1>QRAlimy</h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#generate" id="generateQR">Generate QR</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section id="hero" data-aos="fade-up">
+    <h2>Privacy-Powered QR Connections</h2>
+    <p>Create private, shareable QR profiles instantly.</p>
+    <a href="#" class="btn" id="getStartedBtn">Get Started</a>
+  </section>
+
+ <section id="generate" data-aos="fade-up" style="display: none;">
+    <h2>Generate Your Privacy QR</h2>
+    <form id="qrForm">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <button type="submit">Generate QR</button>
+    </form>
+    <div id="qrResult"></div>
+    
+  </section>
+  <section id="about" data-aos="fade-up">
+    <h2>About QRAlimy</h2>
+    <p>QRAlimy helps you share contact info while protecting your privacy.</p>
+  </section>
+
+  <section id="contact" data-aos="fade-up">
+    <h2>Contact Us</h2>
+    <p>Email us at <strong>support@qralimy.com</strong></p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 QRAlimy - JejeComms</p>
+  </footer>
+  <script src="js/main.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 1000,
+    once: true,
+  });
+</script>
+</body>
+</html>
